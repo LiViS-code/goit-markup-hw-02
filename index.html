@@ -14,58 +14,84 @@
   </head>
   <body>
     <header>
-      <a href="./" class="logo"
-        ><span class="logo-first-word">Web</span>Studio</a
-      >
-      <!-- Навигация по сайту -->
-      <nav>
-        <ul class="navigation-site">
-          <li><a href="./">Студия</a></li>
-          <li><a href="./portfolio.html">Портфолио</a></li>
-          <li><a href="#">Контакты</a></li>
-        </ul>
-      </nav>
-      <!-- список контактов -->
-      <ul>
-        <li><a href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-        <li><a href="tel:+380961111111">+38 096 111 11 11</a></li>
-      </ul>
+      <div class="header-container">
+        <div class="logo-container">
+          <a href="./" class="logo-link"
+            ><span class="logo-first-word">Web</span>Studio</a
+          >
+        </div>
+        <!-- Навигация по сайту -->
+        <nav>
+          <div class="navigation-container">
+            <ul class="navigation-list">
+              <li class="navigation-list-item">
+                <a href="./" class="navigation-link">Студия</a>
+              </li>
+              <li>
+                <a href="./portfolio.html" class="navigation-link">Портфолио</a>
+              </li>
+              <li><a href="#" class="navigation-link">Контакты</a></li>
+            </ul>
+          </div>
+          <div class="contact-container">
+            <ul class="contact-list">
+              <li>
+                <a href="mailto:info@devstudio.com" class="mailto-link"
+                  >info@devstudio.com</a
+                >
+              </li>
+              <li>
+                <a href="tel:+380961111111" class="tel-link"
+                  >+38 096 111 11 11</a
+                >
+              </li>
+            </ul>
+          </div>
+          <!-- список контактов -->
+        </nav>
+      </div>
     </header>
     <main>
       <!-- Секция Hero -->
-      <section>
-        <h1>Эффективные решения для вашего бизнеса</h1>
-        <button type="button">Заказать услугу</button>
+      <section class="hero-section">
+        <h1 class="hero-section-header">
+          Эффективные решения<br />для вашего бизнеса
+        </h1>
+        <button class="button-order" type="button">Заказать услугу</button>
       </section>
       <!-- Особенности компании -->
-      <section>
+      <section class="features-section">
         <!-- TODO сделать невидимым этот h2 заголовок при оформлении дизайна  -->
-        <h2>Особенности</h2>
-        <ul>
-          <li>
-            <h3>Внимание к деталям</h3>
-            <p>
+        <h2 class="hidden-header">Особенности</h2>
+        <ul class="features-section-list">
+          <li class="features-section-list-item">
+            <h3 class="features-section-list-item-header">
+              Внимание к деталям
+            </h3>
+            <p class="features-section-list-item-paragraph">
               Идейные соображения, а также начало повседневной работы по
               формированию позиции.
             </p>
           </li>
-          <li>
-            <h3>Пунктуальность</h3>
-            <p>
+          <li class="features-section-list-item">
+            <h3 class="features-section-list-item-header">Пунктуальность</h3>
+            <p class="features-section-list-item-paragraph">
               Задача организации, в особенности же рамки и место обучения кадров
               влечет за собой.
             </p>
           </li>
-          <li>
-            <h3>Планирование</h3>
-            <p>
+          <li class="features-section-list-item">
+            <h3 class="features-section-list-item-header">Планирование</h3>
+            <p class="features-section-list-item-paragraph">
               Равным образом консультация с широким активом в значительной
               степени обуславливает.
             </p>
           </li>
-          <li>
-            <h3>Современные технологии</h3>
-            <p>
+          <li class="features-section-list-item">
+            <h3 class="features-section-list-item-header">
+              Современные технологии
+            </h3>
+            <p class="features-section-list-item-paragraph">
               Значимость этих проблем настолько очевидна, что реализация
               плановых заданий.
             </p>
@@ -73,25 +99,25 @@
         </ul>
       </section>
       <!-- Чем мы занимаемся -->
-      <section>
-        <h2>Чем мы занимаемся</h2>
+      <section class="doing-section">
+        <h2 class="doing-section-header">Чем мы занимаемся</h2>
         <!-- Список изображений -->
-        <ul>
-          <li>
+        <ul class="doing-section-list">
+          <li class="doing-section-list-item">
             <img
               src="./images/box1.png"
               alt="Изображен дисплей планшета с набранным кодом, рядом на столе лист со схематическим изображением алгоритма и клавиатура, на которой печатает человек (видны только запястья)."
               width="370"
             />
           </li>
-          <li>
+          <li class="doing-section-list-item">
             <img
               src="./images/box2.png"
               alt="Изображен включенный ноутбук и руки женщины со сматрфоном над его клавиатурой. На экране ноутбука изображено 3 смартфона с изображениями разных дизайнов сайтов на их экранах."
               width="370"
             />
           </li>
-          <li>
+          <li class="doing-section-list-item">
             <img
               src="./images/box3.png"
               alt="Изображен планшет в руках женщины, на котором видна шестигранная палитра дизайнера для выброа цветов."
@@ -101,70 +127,85 @@
         </ul>
       </section>
       <!-- Список карточек сотрудников с фото, ФИО, должностью -->
-      <section>
-        <h2>Наша команда</h2>
-        <ul>
+      <section class="team-section">
+        <h2 class="team-section-header">Наша команда</h2>
+        <ul class="team-section-list">
           <!-- 1 Карточка -->
-          <li>
+          <li class="team-section-list-item">
             <img
               src="./images/img1.jpg"
               alt="Фото: мужчина, шатен, с бородой в коричневой рубашке, смеется, в очках."
               width="270"
+              height="260"
             />
-            <h3>Игорь Демьяненко</h3>
-            <p>Product Designer</p>
+            <h3 class="team-section-list-item-header">Игорь Демьяненко</h3>
+            <p class="team-section-list-item-paragraph">Product Designer</p>
           </li>
           <!-- 2 Карточка -->
-          <li>
+          <li class="team-section-list-item">
             <img
               src="./images/img2.jpg"
               alt="Фото: женщина, блондинка, в деловом костюме, руки скрестила на груди, улыбается, в очках."
               width="270"
+              height="260"
             />
-            <h3>Ольга Репина</h3>
-            <p>Frontend Developer</p>
+            <h3 class="team-section-list-item-header">Ольга Репина</h3>
+            <p class="team-section-list-item-paragraph">Frontend Developer</p>
           </li>
           <!-- 3 Карточка -->
-          <li>
+          <li class="team-section-list-item">
             <img
               src="./images/img3.jpg"
               alt="Фото: мужчина, темно-русый, в светлой рубашке, руки скрестил на гругди, с легкой бородкой, улыбается"
               width="270"
+              height="260"
             />
-            <h3>Николай Тарасов</h3>
-            <p>Marketing</p>
+            <h3 class="team-section-list-item-header">Николай Тарасов</h3>
+            <p class="team-section-list-item-paragraph">Marketing</p>
           </li>
           <!-- 4 Карточка -->
-          <li>
+          <li class="team-section-list-item">
             <img
               src="./images/img4.jpg"
               alt="Фото: мужчина, брюнет, с бородой, в черной футболке, в очках, руки скрестил на груди, слегка улыбается."
               width="270"
+              height="260"
             />
-            <h3>Михаил Ермаков</h3>
-            <p>UI Designer</p>
+            <h3 class="team-section-list-item-header">Михаил Ермаков</h3>
+            <p class="team-section-list-item-paragraph">UI Designer</p>
           </li>
         </ul>
       </section>
     </main>
     <footer>
-      <a href="./" class="logo"
-        ><span class="logo-first-word">Web</span>Studio</a
-      >
+      <div class="logo-container-footer">
+        <a href="./" class="logo-link-footer"
+          ><span class="logo-first-word">Web</span>Studio</a
+        >
+      </div>
       <!-- список контактов (подвал) -->
       <address>
         <!-- Ссылка на гуглкарту -->
-        <ul>
-          <li>
-            <a href="https://goo.gl/maps/zS1xnshHH64RWqHC6" target="_blank"
+        <ul class="address-list-footer">
+          <li class="address-list-footer-item">
+            <a
+              class="address-list-footer-item-address-link"
+              href="https://goo.gl/maps/zS1xnshHH64RWqHC6"
+              target="_blank"
               >г. Киев, пр-т Леси Украинки, 26</a
             >
           </li>
-          <li>
-            <a href="mailto:">info@example.com</a>
+          <li class="address-list-footer-item">
+            <a class="faddress-list-footer-item-mailto-link" href="mailto:"
+              >info@example.com</a
+            >
           </li>
-          <li>
-            <a href="tel:+380991111111">+38 099 111 11 11</a>
+          <li class="address-list-footer-item">
+            <a
+              class="address-list-footer-item-tel-link"
+              href="tel:+380991111111"
+              >+38 099 111 11 11</a
+            >
           </li>
         </ul>
       </address>
