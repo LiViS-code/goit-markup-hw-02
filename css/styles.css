@@ -4,12 +4,14 @@ body {
   font-weight: 400;
   color: #212121;
   width: 1600px;
+  background: #fff;
 }
 
 /* блок с шапкой сайта */
 .header-container {
   display: flex;
   height: 80px;
+  border: 1px solid #ececec;
 }
 
 /* блок с логотипом */
@@ -82,7 +84,7 @@ nav {
   color: #2196f3;
 }
 
-/* Офорление всего контента сайта */
+/* Офорление контента index.html */
 
 /* секия Hero */
 .hero-section {
@@ -112,7 +114,7 @@ nav {
   background: #2196f3;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
-  letter-spacing: 0.06em;
+  border: 0;
 }
 
 .button-order:hover {
@@ -288,4 +290,75 @@ footer {
 .address-list-footer-item-tel-link {
   text-decoration: none;
   color: #fff;
+}
+
+/* Офорление контента portfolio.html */
+.portfolio-section {
+  width: 1170px;
+  height: 1360px;
+  margin: 94px 215px 94px 215px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.portfolio-section-list-filters {
+  width: 611px;
+  height: 54px;
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+}
+
+.portfolio-section-list-filters-item {
+  padding: 6px 22px;
+  background-color: #f5f4fa;
+  font-size: 1.14em;
+  border: 0;
+  border-radius: 4px;
+}
+
+.portfolio-section-list-filters-item:hover {
+  background-color: #f5f4fa;
+  background: #2196f3;
+  color: #fff;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
+}
+
+.portfolio-section-list-sample {
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  width: 1170px;
+  height: 1272px;
+  padding: 34px 215px 0 215px;
+  margin: 0;
+  justify-content: space-between;
+}
+
+.portfolio-section-list-sample-item {
+  width: 370px;
+  height: 404px;
+  background-color: #fff;
+  border: 1px solid #eee;
+}
+
+.portfolio-section-list-sample-item-header {
+  width: 322px;
+  height: 36px;
+  margin: 20px 24px 0 24px;
+  font-weight: bold;
+  font-size: 1.29em;
+}
+
+.portfolio-section-list-sample-item-paragraph {
+  width: 322;
+  height: 30;
+  margin: 4px 24px 0 24px;
+  font-size: 1.14em;
+  color: #757575;
 }
