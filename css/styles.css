@@ -1,5 +1,7 @@
+/* Исходные параметры для всей страницы */
 body {
   width: 1600px;
+  margin: 0;
   font-family: "Roboto", sans-serif;
   font-size: 14px;
   font-weight: 400;
@@ -8,22 +10,18 @@ body {
 }
 
 /* блок с шапкой сайта */
-.header-container {
+header {
   height: 80px;
   display: flex;
   border: 1px solid #ececec;
 }
 
-/* блок с логотипом */
-.logo-container {
-  width: 145px;
-  height: 31px;
-  margin: 24px 0 25px 215px;
-  text-align: center;
-}
-
 /* оформление логотипа */
 .logo-link {
+  width: 145px;
+  height: 31px;
+  margin-top: 24px;
+  margin-left: 215px;
   text-decoration: none;
   color: #000;
   font-family: "Raleway", sans-serif;
@@ -31,7 +29,7 @@ body {
   font-size: 1.85em;
   letter-spacing: 0.03em;
 }
-
+/* стилизация первой части логотипа */
 .logo-first-word {
   color: #2196f3;
 }
@@ -41,37 +39,31 @@ nav {
   display: flex;
 }
 
-/* блок ссылок навигации */
-.navigation-container {
-  width: 294px;
-  margin: 32px 0 32px 93px;
-}
-
-/* блок контактов */
-.contact-container {
-  width: 307px;
-  margin: 32px 0 32px 331px;
-}
-
-/* оформление навигации */
+/* навигационные ссылки */
 .navigation-list {
+  width: 294px;
+  margin-top: 32px;
+  margin-left: 93px;
   padding-left: 0;
-  margin-top: 0;
-  margin-bottom: 0;
   display: flex;
   justify-content: space-between;
   list-style-type: none;
 }
 
+/* ссылки с контактами в шапке сайта */
 .contact-list {
-  padding-left: 0;
-  margin-top: 0;
+  width: 307px;
+  height: 16px;
+  margin-top: 32px;
   margin-bottom: 0;
+  margin-left: 331px;
+  padding-left: 0;
   display: flex;
   justify-content: space-between;
   list-style-type: none;
 }
 
+/* общая стилизация ссылок в шапке сайта */
 .navigation-link,
 .mailto-link,
 .tel-link {
@@ -80,15 +72,18 @@ nav {
   letter-spacing: 0.02em;
 }
 
+/* стилизация ссылок в шапке при наведении курсора */
 .navigation-link:hover,
 .mailto-link:hover,
 .tel-link:hover {
   color: #2196f3;
 }
 
+/*                               */
 /* Офорление контента index.html */
+/*                               */
 
-/* секия Hero */
+/* секия hero */
 .hero-section {
   height: 600px;
   display: flex;
@@ -96,6 +91,7 @@ nav {
   background-color: #2f303a;
 }
 
+/* заголовок секции hero */
 .hero-section-header {
   width: 696px;
   height: 120px;
@@ -107,6 +103,7 @@ nav {
   color: #fff;
 }
 
+/* кнопка перехода к заказу в секции hero */
 .order-btn {
   width: 200px;
   height: 50px;
@@ -119,6 +116,7 @@ nav {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
+/* стилизация кнопки перехода к заказу при наведении курсора */
 .order-btn:hover {
   cursor: pointer;
 }
@@ -131,10 +129,14 @@ nav {
   display: flex;
 }
 
+/* скрытые заголовки сайта */
 .hidden-header {
   display: none;
 }
 
+/* секция особенности */
+
+/* стилизация списка особенностей */
 .features-section-list {
   width: 100%;
   height: 100%;
@@ -146,11 +148,13 @@ nav {
   justify-content: space-between;
 }
 
+/* размеры пунктов списка с особенностями */
 .features-section-list-item {
   width: 270px;
   height: 101px;
 }
 
+/* заголовки в списках особенностей */
 .features-section-list-item-header {
   margin-top: 0;
   margin-bottom: 0;
@@ -160,6 +164,7 @@ nav {
   letter-spacing: 0.03em;
 }
 
+/* параграфы в списках особенностей */
 .features-section-list-item-paragraph {
   margin-top: 10px;
   margin-bottom: 0;
@@ -168,12 +173,15 @@ nav {
 }
 
 /* Секция Чем мы занимаемся */
+
+/* размеры и положение секции */
 .doing-section {
   width: 1170px;
   height: 386px;
   margin: 94px 215px 0 215px;
 }
 
+/* стилизация заговолков секции Чем мы занимаемся */
 .doing-section-header {
   margin-top: 0;
   margin-bottom: 0;
@@ -183,6 +191,7 @@ nav {
   letter-spacing: 0.03em;
 }
 
+/* стилизация списка чем мы занимаемся*/
 .doing-section-list {
   padding-left: 0;
   margin-top: 50px;
@@ -192,18 +201,22 @@ nav {
   justify-content: space-between;
 }
 
+/* размеры пунктов списка чем мы занимаемся */
 .doing-section-list-item {
   width: 370px;
   height: 294px;
 }
 
 /* Секция наша команда */
+
+/* размеры и положение секции */
 .team-section {
   height: 648px;
   margin-top: 94px;
   background-color: #f5f4fa;
 }
 
+/* стилизация заголовков секции наша команда */
 .team-section-header {
   margin-top: 0;
   margin-bottom: 0;
@@ -214,6 +227,7 @@ nav {
   letter-spacing: 0.03em;
 }
 
+/* размеры и положение карточек сотрудников */
 .team-section-list {
   width: 1170px;
   height: 368px;
@@ -224,6 +238,7 @@ nav {
   list-style-type: none;
 }
 
+/* стилизация карточки сотрудника */
 .team-section-list-item {
   width: 270px;
   height: 368px;
@@ -233,6 +248,7 @@ nav {
   border-radius: 0px 0px 4px 4px;
 }
 
+/* стилизация фамилии сотрудника */
 .team-section-list-item-header {
   margin-top: 0;
   margin-bottom: 0;
@@ -243,6 +259,7 @@ nav {
   letter-spacing: 0.03em;
 }
 
+/* стилизация должности стотрудинка */
 .team-section-list-item-paragraph {
   margin-top: 0;
   margin-bottom: 0;
@@ -254,19 +271,21 @@ nav {
 }
 
 /* оформление подвала */
+
+/* размеры и цвет подвала */
 footer {
   height: 252px;
+  display: flex;
+  flex-direction: column;
   background-color: #2f303a;
 }
 
-.logo-footer-container {
+/* стилизация логотипа в подвале */
+.logo-footer-link {
   width: 145px;
   height: 31px;
-  padding: 60px 1240px 0 215px;
-  text-align: center;
-}
-
-.logo-footer-link {
+  margin-top: 60px;
+  margin-left: 215px;
   font-family: "Raleway", sans-serif;
   text-decoration: none;
   font-weight: 700;
@@ -275,33 +294,42 @@ footer {
   color: #fff;
 }
 
+/* стилизация списка с адресом и контактами для подвала*/
 .address-footer-list {
   width: 231px;
   height: 81px;
   padding-left: 0;
-  margin: 20px 1154px 0 215px;
+  margin-top: 20px;
+  margin-left: 215px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   list-style-type: none;
 }
 
+/* стилизция шрифта в списке с контактами для подвала */
 .address-footer-list-item {
   font-style: normal;
 }
 
+/* стилизация ссылок с контакмами для подвала */
 .address-footer-list-item-link-address {
   text-decoration: none;
   color: #fff;
 }
 
+/* стилизация ссылок на e-mail и телефон для подвала */
 .address-footer-list-item-link-mailto,
 .address-footer-list-item-link-tel {
   text-decoration: none;
   color: #fff;
 }
 
+/*                                   */
 /* Офорление контента portfolio.html */
+/*                                   */
+
+/* размеры и расопложение секции портфолио */
 .portfolio-section {
   width: 1170px;
   height: 1360px;
@@ -311,6 +339,7 @@ footer {
   align-items: center;
 }
 
+/* стилизация списка фильтров для портфолио  */
 .portfolio-section-filters-list {
   width: 611px;
   height: 54px;
@@ -322,6 +351,7 @@ footer {
   list-style-type: none;
 }
 
+/* стилизация кнопки фильтра для портфолио */
 .portfolio-section-filters-list-item {
   padding: 6px 22px;
   font-size: 1.14em;
@@ -330,6 +360,7 @@ footer {
   background-color: #f5f4fa;
 }
 
+/* изменения кнопки при наведении курсора */
 .portfolio-section-filters-list-item:hover {
   border-radius: 4px;
   color: #fff;
@@ -338,6 +369,7 @@ footer {
     0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
+/* список, содержащий элементы портфолио */
 .portfolio-section-sample-list {
   width: 1170px;
   height: 1272px;
@@ -350,6 +382,7 @@ footer {
   list-style-type: none;
 }
 
+/* размеры и стиль элемента портфолио */
 .portfolio-section-sample-list-item {
   width: 370px;
   height: 404px;
@@ -357,6 +390,7 @@ footer {
   background-color: #fff;
 }
 
+/* стилизация заголовка элемента портфолио */
 .portfolio-section-sample-list-item-header {
   width: 322px;
   height: 36px;
@@ -365,6 +399,7 @@ footer {
   font-size: 1.29em;
 }
 
+/* стилизация описания элемента портфолио */
 .portfolio-section-sample-list-item-paragraph {
   width: 322;
   height: 30;
