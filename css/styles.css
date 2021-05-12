@@ -10,10 +10,15 @@ body {
 }
 
 /* блок с шапкой сайта */
-header {
+.header-container {
   height: 80px;
   display: flex;
   border: 1px solid #ececec;
+}
+
+/* оформление навигации */
+.nav-container {
+  display: flex;
 }
 
 /* оформление логотипа */
@@ -29,20 +34,17 @@ header {
   font-size: 1.85em;
   letter-spacing: 0.03em;
 }
-/* стилизация первой части логотипа */
+
+/* стилизация логотипа */
 .logo-first-word {
   color: #2196f3;
-}
-
-/* оформление навигации */
-nav {
-  display: flex;
 }
 
 /* навигационные ссылки */
 .navigation-list {
   width: 294px;
   margin-top: 32px;
+  margin-bottom: 0;
   margin-left: 93px;
   padding-left: 0;
   display: flex;
@@ -84,7 +86,7 @@ nav {
 /*                               */
 
 /* секия hero */
-.hero-section {
+.hero-container {
   height: 600px;
   display: flex;
   flex-direction: column;
@@ -92,10 +94,12 @@ nav {
 }
 
 /* заголовок секции hero */
-.hero-section-header {
+.hero-header {
   width: 696px;
   height: 120px;
-  margin: 200px 452px 0 452px;
+  margin-top: 200px;
+  margin-bottom: 0;
+  margin-left: 452px;
   text-align: center;
   text-transform: uppercase;
   font-size: 3.14em;
@@ -107,7 +111,8 @@ nav {
 .order-btn {
   width: 200px;
   height: 50px;
-  margin: 30px 700px 0 700px;
+  margin-top: 30px;
+  margin-left: 700px;
   border: 0;
   border-radius: 4px;
   font-size: 1.14em;
@@ -122,10 +127,11 @@ nav {
 }
 
 /* секция особенности */
-.features-section {
+.features-container {
   width: 1170px;
   height: 101px;
-  margin: 94px 215px 0 215px;
+  margin-top: 94px;
+  margin-left: 215px;
   display: flex;
 }
 
@@ -137,7 +143,7 @@ nav {
 /* секция особенности */
 
 /* стилизация списка особенностей */
-.features-section-list {
+.features-list {
   width: 100%;
   height: 100%;
   padding-left: 0;
@@ -149,13 +155,13 @@ nav {
 }
 
 /* размеры пунктов списка с особенностями */
-.features-section-list-item {
+.features-list-item {
   width: 270px;
   height: 101px;
 }
 
 /* заголовки в списках особенностей */
-.features-section-list-item-header {
+.features-list-item-header {
   margin-top: 0;
   margin-bottom: 0;
   text-transform: uppercase;
@@ -165,7 +171,7 @@ nav {
 }
 
 /* параграфы в списках особенностей */
-.features-section-list-item-paragraph {
+.features-list-item-paragraph {
   margin-top: 10px;
   margin-bottom: 0;
   line-height: 1.71em;
@@ -175,14 +181,15 @@ nav {
 /* Секция Чем мы занимаемся */
 
 /* размеры и положение секции */
-.doing-section {
+.doing-container {
   width: 1170px;
   height: 386px;
-  margin: 94px 215px 0 215px;
+  margin-top: 94px;
+  margin-left: 215px;
 }
 
 /* стилизация заговолков секции Чем мы занимаемся */
-.doing-section-header {
+.doing-header {
   margin-top: 0;
   margin-bottom: 0;
   text-align: center;
@@ -192,7 +199,7 @@ nav {
 }
 
 /* стилизация списка чем мы занимаемся*/
-.doing-section-list {
+.doing-list {
   padding-left: 0;
   margin-top: 50px;
   margin-bottom: 0;
@@ -202,7 +209,7 @@ nav {
 }
 
 /* размеры пунктов списка чем мы занимаемся */
-.doing-section-list-item {
+.doing-list-item {
   width: 370px;
   height: 294px;
 }
@@ -210,14 +217,14 @@ nav {
 /* Секция наша команда */
 
 /* размеры и положение секции */
-.team-section {
+.team-container {
   height: 648px;
   margin-top: 94px;
   background-color: #f5f4fa;
 }
 
 /* стилизация заголовков секции наша команда */
-.team-section-header {
+.team-header {
   margin-top: 0;
   margin-bottom: 0;
   padding: 94px 0 0 0;
@@ -228,18 +235,20 @@ nav {
 }
 
 /* размеры и положение карточек сотрудников */
-.team-section-list {
+.team-list {
   width: 1170px;
   height: 368px;
   padding-left: 0;
-  margin: 50px 215px 0 215px;
+  margin-top: 50px;
+  margin-bottom: 0;
+  margin-left: 215px;
   display: flex;
   justify-content: space-between;
   list-style-type: none;
 }
 
 /* стилизация карточки сотрудника */
-.team-section-list-item {
+.team-list-item {
   width: 270px;
   height: 368px;
   background-color: #fff;
@@ -249,7 +258,7 @@ nav {
 }
 
 /* стилизация фамилии сотрудника */
-.team-section-list-item-header {
+.team-list-item-header {
   margin-top: 0;
   margin-bottom: 0;
   padding-top: 30px;
@@ -260,7 +269,7 @@ nav {
 }
 
 /* стилизация должности стотрудинка */
-.team-section-list-item-paragraph {
+.team-list-item-paragraph {
   margin-top: 0;
   margin-bottom: 0;
   padding-top: 10px;
@@ -273,7 +282,7 @@ nav {
 /* оформление подвала */
 
 /* размеры и цвет подвала */
-footer {
+.footer-container {
   height: 252px;
   display: flex;
   flex-direction: column;
@@ -300,6 +309,7 @@ footer {
   height: 81px;
   padding-left: 0;
   margin-top: 20px;
+  margin-bottom: 0;
   margin-left: 215px;
   display: flex;
   flex-direction: column;
@@ -330,19 +340,24 @@ footer {
 /*                                   */
 
 /* размеры и расопложение секции портфолио */
-.portfolio-section {
+.portfolio-container {
   width: 1170px;
   height: 1360px;
-  margin: 94px 215px 94px 215px;
+  margin-top: 94px;
+  margin-bottom: 94px;
+  margin-left: 215px;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
 /* стилизация списка фильтров для портфолио  */
-.portfolio-section-filters-list {
+.filter-container {
   width: 611px;
   height: 54px;
+}
+
+.portfolio-filters-list {
   margin-top: 0;
   margin-bottom: 0;
   padding-left: 0;
@@ -352,7 +367,7 @@ footer {
 }
 
 /* стилизация кнопки фильтра для портфолио */
-.portfolio-section-filters-list-item {
+.portfolio-filters-list-item {
   padding: 6px 22px;
   font-size: 1.14em;
   border: 0;
@@ -361,7 +376,7 @@ footer {
 }
 
 /* изменения кнопки при наведении курсора */
-.portfolio-section-filters-list-item:hover {
+.portfolio-filters-list-item:hover {
   border-radius: 4px;
   color: #fff;
   background-color: #2196f3;
@@ -370,20 +385,26 @@ footer {
 }
 
 /* список, содержащий элементы портфолио */
-.portfolio-section-sample-list {
+.sample-container {
   width: 1170px;
   height: 1272px;
-  padding: 34px 215px 0 215px;
+  margin-top: 34px;
+}
+
+.portfolio-sample-list {
+  height: 100%;
   margin-top: 0;
   margin-bottom: 0;
+  padding-left: 0;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  align-content: space-between;
   list-style-type: none;
 }
 
 /* размеры и стиль элемента портфолио */
-.portfolio-section-sample-list-item {
+.portfolio-sample-list-item {
   width: 370px;
   height: 404px;
   border: 1px solid #eee;
@@ -391,7 +412,7 @@ footer {
 }
 
 /* стилизация заголовка элемента портфолио */
-.portfolio-section-sample-list-item-header {
+.portfolio-sample-list-item-header {
   width: 322px;
   height: 36px;
   margin: 20px 24px 0 24px;
@@ -400,7 +421,7 @@ footer {
 }
 
 /* стилизация описания элемента портфолио */
-.portfolio-section-sample-list-item-paragraph {
+.portfolio-sample-list-item-paragraph {
   width: 322;
   height: 30;
   margin: 4px 24px 0 24px;
