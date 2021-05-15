@@ -27,14 +27,15 @@ body {
   line-height: 1.14;
   letter-spacing: 0.03em;
   font-weight: 400;
+  color: var(--text-color);
 }
 
 /* общие настройки для заголовков */
 
-/* .title {
+.title {
   margin-top: 0;
   margin-bottom: 0;
-} */
+}
 
 /* скрытые заголовки сайта */
 
@@ -54,15 +55,15 @@ body {
 
 /* общий стиль для параграфов */
 
-/* .text {
+.text {
   margin-top: 0;
   margin-bottom: 0;
-} */
+}
 
 /* =========== */
 /* шапка сайта */
 
-/* header {
+/* .header-box {
   width: var(--width-site);
   height: 80px;
   display: flex;
@@ -77,8 +78,8 @@ body {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: 26px;
-  line-height: 1.2;
   text-decoration: none;
+  line-height: 1.2;
   color: var(--text-dark-color);
 }
 
@@ -95,10 +96,12 @@ body {
 }
 
 .nav-box .link {
+  font-weight: 500;
   color: var(--text-color);
 }
 
 .contact-list .link {
+  font-weight: 500;
   color: var(--text-muted-color);
 }
 
@@ -142,7 +145,7 @@ body {
 /* оформление подвала */
 
 /* размеры и цвет подвала */
-footer {
+.footer-box {
   /* width: var(--width-site); */
   height: 252px;
   /* display: flex;
@@ -151,14 +154,14 @@ footer {
 }
 
 /* стилизация логотипа в подвале */
-footer .logo-link {
+.footer-box .logo-link {
   /* margin-top: 60px;
   margin-left: 215px; */
   color: var(--text-light-color);
 }
 
 /* стилизация списка с адресом и контактами для подвала*/
-/* footer .list {
+/* .footer-box .list {
   width: 231px;
   height: 81px;
   padding-left: 0;
@@ -169,20 +172,21 @@ footer .logo-link {
 } */
 
 /* стилизция шрифта в списке с контактами для подвала */
-footer .list-item {
+.footer-box .list-item {
   font-style: normal;
 }
 
-footer .link {
+.footer-box .link {
   line-height: 1.71;
   color: rgba(255, 255, 255, 0.6);
 }
 
-footer .address-link {
+.footer-box .address-link {
   color: var(--text-light-color);
 }
 
 .btn {
+  font-family: "Roboto", sans-serif;
   border: 0;
   border-radius: 4px;
 }
@@ -211,11 +215,12 @@ footer .address-link {
 /* заголовок секции hero */
 
 .hero-box .title {
-  width: 696px;
+  /* width: 696px; */
   /* margin-top: 200px;
   margin-left: 452px; */
   text-align: center;
   text-transform: uppercase;
+  font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
   letter-spacing: 0.06em;
@@ -230,7 +235,9 @@ footer .address-link {
   /* margin-top: 30px;
   margin-left: 700px; */
   padding: 0;
-  font-size: 1.14em;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
   background: var(--accent-color);
   color: var(--text-light-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -257,13 +264,11 @@ footer .address-link {
 
 /* стилизация списка особенностей */
 
-.features-box .list {
+/* .features-box .list {
   width: 100%;
-  padding-left: 0;
-  list-style-type: none;
-  /* display: flex;
-  justify-content: space-between; */
-}
+  display: flex;
+  justify-content: space-between;
+} */
 
 /* размеры пунктов списка с особенностями */
 
@@ -315,7 +320,7 @@ footer .address-link {
 
 .doing-box .title {
   /* text-align: center; */
-  font-weight: bold;
+  font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
 }
@@ -335,7 +340,7 @@ footer .address-link {
 .team-box .title {
   /* padding-top: 94px; */
   /* text-align: center; */
-  font-weight: bold;
+  font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
 }
@@ -419,7 +424,9 @@ footer .address-link {
 .filters-list .btn {
   padding: 6px 22px;
   font-size: 16px;
+  font-weight: 500;
   line-height: 1.63;
+  color: var(--text-color);
   background-color: var(--backgrount-third-color);
 }
 
@@ -459,8 +466,8 @@ footer .address-link {
 
 .sample-list .title {
   width: 322px;
-  margin: 20px 24px 0 24px;
-  font-weight: bold;
+  /* margin: 20px 24px 0 24px; */
+  font-weight: 700;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
@@ -470,7 +477,7 @@ footer .address-link {
 
 .sample-list .text {
   width: 322;
-  margin: 4px 24px 0 24px;
+  /* margin: 4px 24px 0 24px; */
   font-size: 16px;
   line-height: 1.88;
   color: var(--text-muted-color);
