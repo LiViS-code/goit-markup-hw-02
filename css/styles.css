@@ -109,7 +109,9 @@ body {
 
 .link:hover,
 .link:focus,
-.link.active {
+.link.active,
+.footer-box .link:hover,
+.footer-box .link:focus {
   color: var(--accent-color);
 }
 
