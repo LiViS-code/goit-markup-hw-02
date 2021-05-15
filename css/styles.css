@@ -94,7 +94,7 @@ body {
   letter-spacing: 0.02em;
 }
 
-nav .link {
+.nav-box .link {
   color: var(--text-color);
 }
 
@@ -112,7 +112,7 @@ nav .link {
 
 /* навигационная панель */
 
-/* nav {
+/* .nav-box {
   width: 532px;
   height: 31px;
   margin-left: 215px;
@@ -122,7 +122,7 @@ nav .link {
 
 /* навигация по сайту */
 
-/* nav .list {
+/* .nav-box .list {
   width: 294px;
   margin-left: 93px; */
 /* justify-content: space-between;
@@ -201,7 +201,7 @@ footer .address-link {
 
 /* секия hero */
 
-.hero-section {
+.hero-box {
   /* height: 600px; */
   /* display: flex;
   flex-direction: column; */
@@ -210,7 +210,7 @@ footer .address-link {
 
 /* заголовок секции hero */
 
-.hero-section .title {
+.hero-box .title {
   width: 696px;
   /* margin-top: 200px;
   margin-left: 452px; */
@@ -224,7 +224,7 @@ footer .address-link {
 
 /* кнопка перехода к заказу в секции hero */
 
-.hero-section .btn {
+.hero-box .btn {
   width: 200px;
   height: 50px;
   /* margin-top: 30px;
@@ -238,14 +238,14 @@ footer .address-link {
 
 /* стилизация кнопки перехода к заказу при наведении курсора */
 
-.hero-section .btn:hover {
+.hero-box .btn:hover {
   cursor: pointer;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
 /* секция особенности */
 
-/* .features-section {
+/* .features-box {
   width: 1170px;
   height: 101px;
   margin-top: 94px;
@@ -257,7 +257,7 @@ footer .address-link {
 
 /* стилизация списка особенностей */
 
-.features-section .list {
+.features-box .list {
   width: 100%;
   padding-left: 0;
   list-style-type: none;
@@ -267,21 +267,21 @@ footer .address-link {
 
 /* размеры пунктов списка с особенностями */
 
-.features-section .list-item {
+.features-box .list-item {
   width: 270px;
   height: 101px;
 }
 
 /* заголовки в списках особенностей */
 
-.features-section .title {
+.features-box .title {
   text-transform: uppercase;
   font-weight: 700;
 }
 
 /* параграфы в списках особенностей */
 
-.features-section .text {
+.features-box .text {
   margin-top: 10px;
   margin-bottom: 0;
   line-height: 1.71;
@@ -292,28 +292,28 @@ footer .address-link {
 
 /* размеры и положение секции */
 
-/* .doing-section {
+/* .doing-box {
   width: 1170px;
   height: 386px;
   margin-top: 94px;
   margin-left: 215px;
 } */
 
-/* .doing-section .list {
+/* .doing-box .list {
   margin-top: 50px;
   justify-content: space-between;
 } */
 
 /* размеры пунктов списка чем мы занимаемся */
 
-/* .doing-section .list-item {
+/* .doing-box .list-item {
   width: 370px;
   height: 294px;
 } */
 
 /* стилизация заговолков секции Чем мы занимаемся */
 
-.doing-section .title {
+.doing-box .title {
   /* text-align: center; */
   font-weight: bold;
   font-size: 36px;
@@ -324,7 +324,7 @@ footer .address-link {
 
 /* размеры и положение секции */
 
-.team-section {
+.team-box {
   /* height: 648px; */
   /* margin-top: 94px; */
   background-color: var(--backgrount-third-color);
@@ -332,7 +332,7 @@ footer .address-link {
 
 /* стилизация заголовков секции наша команда */
 
-.team-section .title {
+.team-box .title {
   /* padding-top: 94px; */
   /* text-align: center; */
   font-weight: bold;
@@ -394,7 +394,7 @@ footer .address-link {
 
 /* размеры и расопложение секции портфолио */
 
-/* .portfolio-section {
+/* .portfolio-box {
   width: 1170px;
   height: 1360px;
   margin-top: 94px;
