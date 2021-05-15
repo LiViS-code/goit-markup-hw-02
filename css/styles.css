@@ -24,7 +24,7 @@ body {
   /* margin: 0; */
   font-family: "Roboto", sans-serif;
   font-size: 14px;
-  line-height: 1.14em;
+  line-height: 1.14;
   letter-spacing: 0.03em;
   font-weight: 400;
 }
@@ -77,7 +77,7 @@ body {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: 26px;
-  line-height: 1.2em;
+  line-height: 1.2;
   text-decoration: none;
   color: var(--text-dark-color);
 }
@@ -170,7 +170,7 @@ footer .list-item {
 }
 
 footer .link {
-  line-height: 1.71em;
+  line-height: 1.71;
   text-decoration: none;
   color: var(--text-light-color);
 }
@@ -210,7 +210,7 @@ footer .link {
   text-align: center;
   text-transform: uppercase;
   font-size: 44px;
-  line-height: 1.36em;
+  line-height: 1.36;
   letter-spacing: 0.06em;
   color: var(--text-light-color);
 }
@@ -249,6 +249,7 @@ footer .link {
 /* секция особенности */
 
 /* стилизация списка особенностей */
+
 .features-section .list {
   width: 100%;
   padding-left: 0;
@@ -258,28 +259,32 @@ footer .link {
 }
 
 /* размеры пунктов списка с особенностями */
+
 .features-section .list-item {
   width: 270px;
   height: 101px;
 }
 
 /* заголовки в списках особенностей */
+
 .features-section .title {
   text-transform: uppercase;
   font-weight: 700;
 }
 
 /* параграфы в списках особенностей */
+
 .features-section .text {
   margin-top: 10px;
   margin-bottom: 0;
-  line-height: 1.71em;
+  line-height: 1.71;
   color: var(--text-muted-color);
 }
 
 /* Секция Чем мы занимаемся */
 
 /* размеры и положение секции */
+
 /* .doing-section {
   width: 1170px;
   height: 386px;
@@ -293,22 +298,25 @@ footer .link {
 } */
 
 /* размеры пунктов списка чем мы занимаемся */
+
 /* .doing-section .list-item {
   width: 370px;
   height: 294px;
 } */
 
 /* стилизация заговолков секции Чем мы занимаемся */
+
 .doing-section .title {
   /* text-align: center; */
   font-weight: bold;
   font-size: 36px;
-  line-height: 1.17em;
+  line-height: 1.17;
 }
 
 /* Секция наша команда */
 
 /* размеры и положение секции */
+
 .team-section {
   /* height: 648px; */
   /* margin-top: 94px; */
@@ -316,15 +324,17 @@ footer .link {
 }
 
 /* стилизация заголовков секции наша команда */
+
 .team-section .title {
   /* padding-top: 94px; */
   /* text-align: center; */
   font-weight: bold;
   font-size: 36px;
-  line-height: 1.17em;
+  line-height: 1.17;
 }
 
 /* размеры и положение карточек сотрудников */
+
 .team-list {
   /* width: 1170px;
   height: 368px;
@@ -338,6 +348,7 @@ footer .link {
 }
 
 /* стилизация карточки сотрудника */
+
 .team-list .item {
   width: 270px;
   height: 368px;
@@ -347,21 +358,23 @@ footer .link {
   border-radius: 0px 0px 4px 4px;
 }
 
-/* стилизация фамилии сотрудника */
+/* стилизация фамилия, имя сотрудника */
+
 .team-list .title {
   padding-top: 30px;
   text-align: center;
   font-weight: 500;
   font-size: 16px;
-  line-height: 1.19em;
+  line-height: 1.19;
 }
 
 /* стилизация должности стотрудинка */
+
 .team-list .text {
   /* padding-top: 10px; */
   text-align: center;
   font-size: 16px;
-  line-height: 1.19em;
+  line-height: 1.19;
   color: var(--text-muted-color);
 }
 
@@ -395,14 +408,16 @@ footer .link {
 }
 
 /* стилизация кнопки фильтра для портфолио */
+
 .filters-list .btn {
   padding: 6px 22px;
   font-size: 16px;
-  line-height: 1.63em;
+  line-height: 1.63;
   background-color: var(--backgrount-third-color);
 }
 
 /* изменения кнопки при наведении курсора */
+
 .filters-list .btn:hover,
 .filters-list .btn:focus {
   cursor: pointer;
@@ -425,6 +440,7 @@ footer .link {
 } */
 
 /* размеры и стиль элемента портфолио */
+
 .sample-list .item {
   width: 370px;
   height: 404px;
@@ -433,20 +449,22 @@ footer .link {
 }
 
 /* стилизация заголовка элемента портфолио */
+
 .sample-list .title {
   width: 322px;
   margin: 20px 24px 0 24px;
   font-weight: bold;
   font-size: 18px;
-  line-height: 2em;
+  line-height: 2;
   letter-spacing: 0.06em;
 }
 
 /* стилизация описания элемента портфолио */
+
 .sample-list .text {
   width: 322;
   margin: 4px 24px 0 24px;
   font-size: 16px;
-  line-height: 1.88em;
+  line-height: 1.88;
   color: var(--text-muted-color);
 }
