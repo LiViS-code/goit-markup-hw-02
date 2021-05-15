@@ -89,20 +89,24 @@ body {
 
 /* стиль ссылок в шапке */
 
-.nav-link,
-.contact-link {
+.link {
   text-decoration: none;
   letter-spacing: 0.02em;
+}
+
+nav .link {
   color: var(--text-color);
+}
+
+.contact-list .link {
+  color: var(--text-muted-color);
 }
 
 /* акцент при наведении, фокусе и активности ссылки */
 
-.nav-link:hover,
-.nav-link:focus,
-.nav-link.active,
-.contact-link:hover,
-.contact-link:focus {
+.link:hover,
+.link:focus,
+.link.active {
   color: var(--accent-color);
 }
 
@@ -171,7 +175,10 @@ footer .list-item {
 
 footer .link {
   line-height: 1.71;
-  text-decoration: none;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+footer .address-link {
   color: var(--text-light-color);
 }
 
