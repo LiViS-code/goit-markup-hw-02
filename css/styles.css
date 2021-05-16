@@ -1,7 +1,6 @@
 /*  палитра цветов и переменные для стилизации */
 
 :root {
-  --width-site: 1600px;
   --text-color: #212121;
   --text-light-color: #ffffff;
   --text-dark-color: #000000;
@@ -12,16 +11,9 @@
   --backgrount-third-color: #f5f4fa;
 }
 
-/* глобальные установки значений */
-
-/* * {
-  box-sizing: border;
-} */
-
 /* Исходные параметры для всего контента */
 
 body {
-  /* margin: 0; */
   font-family: "Roboto", sans-serif;
   font-size: 14px;
   line-height: 1.14;
@@ -46,11 +38,7 @@ body {
 /*  стиль списков в шапке и секциях сайта */
 
 .list {
-  /* margin-top: 0;
-  margin-bottom: 0;
-  padding-left: 0; */
   list-style-type: none;
-  /* display: flex; */
 }
 
 /* общий стиль для параграфов */
@@ -60,21 +48,9 @@ body {
   margin-bottom: 0;
 }
 
-/* =========== */
-/* шапка сайта */
-
-/* .header-box {
-  width: var(--width-site);
-  height: 80px;
-  display: flex;
-  align-items: center;
-  border: 1px solid #ececec;
-} */
-
 /* логотип */
 
 .logo-link {
-  width: 145px;
   font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: 26px;
@@ -115,65 +91,30 @@ body {
   color: var(--accent-color);
 }
 
-/* навигационная панель */
+/* стилизация кнопок */
 
-/* .nav-box {
-  width: 532px;
-  height: 31px;
-  margin-left: 215px;
-  display: flex;
-  align-items: center;
-} */
-
-/* навигация по сайту */
-
-/* .nav-box .list {
-  width: 294px;
-  margin-left: 93px; */
-/* justify-content: space-between;
-} */
-
-/* ссылки с контактами в шапке сайта */
-/* .contact-list {
-  width: 307px;
-  margin-left: 331px;
-  justify-content: space-between;
-} */
-
-/* шапка сайта */
-/* =========== */
+.btn {
+  font-family: "Roboto", sans-serif;
+  border: 0;
+  border-radius: 4px;
+}
 
 /* ================== */
 /* оформление подвала */
 
 /* размеры и цвет подвала */
 .footer-box {
-  /* width: var(--width-site); */
-  height: 252px;
-  /* display: flex;
-  flex-direction: column; */
   background-color: var(--background-secondary-color);
 }
 
 /* стилизация логотипа в подвале */
+
 .footer-box .logo-link {
-  /* margin-top: 60px;
-  margin-left: 215px; */
   color: var(--text-light-color);
 }
 
-/* стилизация списка с адресом и контактами для подвала*/
-/* .footer-box .list {
-  width: 231px;
-  height: 81px;
-  padding-left: 0;
-  margin-top: 20px;
-  margin-left: 215px;
-  flex-direction: column;
-  justify-content: space-between;
-} */
-
 /* стилизция шрифта в списке с контактами для подвала */
+
 .footer-box .list-item {
   font-style: normal;
 }
@@ -187,39 +128,16 @@ body {
   color: var(--text-light-color);
 }
 
-.btn {
-  font-family: "Roboto", sans-serif;
-  border: 0;
-  border-radius: 4px;
-}
-
-/* оформление подвала */
-/* ================== */
-
 /* ============================= */
 /* Офорление контента index.html */
 
-/* основной блок сайта */
-
-/* main {
-  width: var(--width-site);
-} */
-
-/* секия hero */
-
 .hero-box {
-  /* height: 600px; */
-  /* display: flex;
-  flex-direction: column; */
   background-color: var(--background-secondary-color);
 }
 
 /* заголовок секции hero */
 
 .hero-box .title {
-  /* width: 696px; */
-  /* margin-top: 200px;
-  margin-left: 452px; */
   text-align: center;
   text-transform: uppercase;
   font-weight: 900;
@@ -232,11 +150,6 @@ body {
 /* кнопка перехода к заказу в секции hero */
 
 .hero-box .btn {
-  width: 200px;
-  height: 50px;
-  /* margin-top: 30px;
-  margin-left: 700px; */
-  padding: 0;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
@@ -253,31 +166,6 @@ body {
 }
 
 /* секция особенности */
-
-/* .features-box {
-  width: 1170px;
-  height: 101px;
-  margin-top: 94px;
-  margin-left: 215px;
-  display: flex;
-} */
-
-/* секция особенности */
-
-/* стилизация списка особенностей */
-
-/* .features-box .list {
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-} */
-
-/* размеры пунктов списка с особенностями */
-
-.features-box .list-item {
-  width: 270px;
-  height: 101px;
-}
 
 /* заголовки в списках особенностей */
 
@@ -299,31 +187,9 @@ body {
 
 /* Секция Чем мы занимаемся */
 
-/* размеры и положение секции */
-
-/* .doing-box {
-  width: 1170px;
-  height: 386px;
-  margin-top: 94px;
-  margin-left: 215px;
-} */
-
-/* .doing-box .list {
-  margin-top: 50px;
-  justify-content: space-between;
-} */
-
-/* размеры пунктов списка чем мы занимаемся */
-
-/* .doing-box .list-item {
-  width: 370px;
-  height: 294px;
-} */
-
 /* стилизация заговолков секции Чем мы занимаемся */
 
 .doing-box .title {
-  /* text-align: center; */
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
@@ -331,19 +197,13 @@ body {
 
 /* Секция наша команда */
 
-/* размеры и положение секции */
-
 .team-box {
-  /* height: 648px; */
-  /* margin-top: 94px; */
   background-color: var(--backgrount-third-color);
 }
 
 /* стилизация заголовков секции наша команда */
 
 .team-box .title {
-  /* padding-top: 94px; */
-  /* text-align: center; */
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
@@ -352,22 +212,12 @@ body {
 /* размеры и положение карточек сотрудников */
 
 .team-list {
-  /* width: 1170px;
-  height: 368px;
-  padding-left: 0;
-  margin-top: 50px;
-  margin-bottom: 0;
-  margin-left: 215px;
-  display: flex;
-  justify-content: space-between; */
   list-style-type: none;
 }
 
 /* стилизация карточки сотрудника */
 
 .team-list .item {
-  width: 270px;
-  height: 368px;
   background-color: var(--background-prime-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -387,7 +237,6 @@ body {
 /* стилизация должности стотрудинка */
 
 .team-list .text {
-  /* padding-top: 10px; */
   text-align: center;
   font-size: 16px;
   line-height: 1.19;
@@ -401,25 +250,9 @@ body {
 /* Офорление контента portfolio.html */
 /*                                   */
 
-/* размеры и расопложение секции портфолио */
-
-/* .portfolio-box {
-  width: 1170px;
-  height: 1360px;
-  margin-top: 94px;
-  margin-bottom: 94px;
-  margin-left: 215px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-} */
-
 /* стилизация списка фильтров для портфолио  */
 
 .filters-list {
-  /* width: 611px;
-  height: 54px;
-  display: flex; */
   justify-content: space-between;
 }
 
@@ -437,31 +270,19 @@ body {
 /* изменения кнопки при наведении курсора */
 
 .filters-list .btn:hover,
-.filters-list .btn:focus {
+.filters-list .btn:focus,
+.filters-list .btn:active {
   cursor: pointer;
+  outline: none;
   color: var(--text-light-color);
   background-color: var(--accent-color);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
-/* список, содержащий элементы портфолио */
-
-/* .sample-list {
-  width: 1170px;
-  height: 1272px;
-  margin-top: 34px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-content: space-between;
-} */
-
 /* размеры и стиль элемента портфолио */
 
 .sample-list .item {
-  width: 370px;
-  height: 404px;
   border: 1px solid #eee;
   background-color: var(--background-prime-color);
 }
@@ -469,8 +290,6 @@ body {
 /* стилизация заголовка элемента портфолио */
 
 .sample-list .title {
-  width: 322px;
-  /* margin: 20px 24px 0 24px; */
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
@@ -480,8 +299,6 @@ body {
 /* стилизация описания элемента портфолио */
 
 .sample-list .text {
-  width: 322;
-  /* margin: 4px 24px 0 24px; */
   font-size: 16px;
   line-height: 1.88;
   color: var(--text-muted-color);
